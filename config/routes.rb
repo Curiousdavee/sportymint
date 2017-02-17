@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
 
-  root 'matches#index'
+  root 'teams#index'
+  resources :teams do
+    resources :matches, only: [:show, :create]
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

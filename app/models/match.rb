@@ -1,3 +1,3 @@
 class Match < ActiveRecord::Base
-  belongs_do :team
+  belongs_to :team
 end

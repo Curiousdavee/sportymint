@@ -1,5 +1,13 @@
 class MatchesController < ApplicationController
-  def index
-    @matches = Match.all
-  end
+  # def create
+
+  # end
+
+  # def show
+  #   @team = Team.find(params[:team_id])
+  #   @team.matches
+  #   redirect_to team_match(@team)
+  # end
+
+
 end
