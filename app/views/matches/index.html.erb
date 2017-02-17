@@ -1,1 +1,8 @@
-<h1>Welcome!</h1>
+<h1>Basketball League</h1>
+<% @matches.each do |match| %>
+  <div>
+    <h1><%= match.score %></h1><br />
+    <h3><%= match.status %></h3><br />
+  </div>
+  <hr />
+<% end %>
