@@ -1,29 +1,26 @@
+<div class="container">
 <div class="col-xs-12">
-
   <h1 class="text-center">Basketball League</h1>
   <br />
+  <br />
+  <div class="row">
+  <div class="col-xs-6 col-xs-offset-3">
     <% @team.each do |team| %>
           <div class="panel panel-default panel-success">
           <!-- Default panel contents -->
-          <div class="panel-heading"><%= team.name %></div>
-          <div class="panel-body">
-            <p>We call this team - <%= team.description %>. Lakers are looking for Kobe to make a comeback from retirement.</p>
+              <div class="panel-heading"><%= team.name %></div>
+              <div class="panel-body">
+                  <p><%= team.name %> is <%= team.description %></p>
+                  <p><%= team.name %> is currently on a 5 game winning streak!</p>
+                  <hr />
+                  <h4 class="text-center">(Current Score: 5-0)</h4>
+              </div>
           </div>
-          <hr />
-          <!-- Table -->
-          <table class="table">
-            <ul>
-              <li>
-                <ul>
-                <li></li>
-                </ul>
-              </li>
-              <li></li>
-              <li></li>
-            </ul>
-          </table>
-      </div>
     <% end %>
+  </div>
+
+
+
+
+  </div>
 </div>
-
-
